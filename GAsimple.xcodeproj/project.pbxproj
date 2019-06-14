@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0D000B22B41B190004D87C /* Chromosome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D000922B41B190004D87C /* Chromosome.cpp */; };
 		9BAAAC6522AE96690061A4E4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAC6422AE96690061A4E4 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B0D000922B41B190004D87C /* Chromosome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Chromosome.cpp; sourceTree = "<group>"; };
+		9B0D000A22B41B190004D87C /* Chromosome.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Chromosome.hpp; sourceTree = "<group>"; };
 		9BAAAC6122AE96690061A4E4 /* GAsimple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GAsimple; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAAAC6422AE96690061A4E4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				9BAAAC6422AE96690061A4E4 /* main.cpp */,
+				9B0D000922B41B190004D87C /* Chromosome.cpp */,
+				9B0D000A22B41B190004D87C /* Chromosome.hpp */,
 			);
 			path = GAsimple;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAAAC6522AE96690061A4E4 /* main.cpp in Sources */,
+				9B0D000B22B41B190004D87C /* Chromosome.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
