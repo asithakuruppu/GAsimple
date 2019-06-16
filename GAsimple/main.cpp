@@ -11,13 +11,14 @@
 
 using namespace std;
 int main(int argc, const char * argv[]) {
-    std::cout << "Hello, World!\n";
-    Chromosome c(10, 10);
-    Chromosome d(10, 10);
-    Chromosome e = c.mate(d);
-    c.print();
-    d.print();
-    e.print();
+    int fitness[] = {0, 2, 4, 8, 16, 32, 64, 128, 256, 512};
+//    Chromosome(10, 2, fitness);
+    Population population(100, 10, 2, fitness);
+    population.printPopulation();
+    cout << "  \n";
+    Chromosome bestChild = population.mateTop(fitness);
+    cout << "best child \n";
+    bestChild.print();
     return 0;
 
 }
