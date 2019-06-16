@@ -31,7 +31,7 @@ public: Chromosome(int length, int dimention, int fitnessArray[]){
         };
     this->fitness = fitness;
 
-    }
+};
 
 public: Chromosome mate(Chromosome x, int fitnessArray[]){
     Chromosome z(x.length, x.dimention, fitnessArray);
@@ -39,7 +39,7 @@ public: Chromosome mate(Chromosome x, int fitnessArray[]){
     for(int i = 0; i < x.length; i++){
         int random = this->random() % 2;
         z.gene[i] = random ? this->gene[i] : x.gene[i];
-        z.fitness += fitnessArray[0];
+        z.fitness += fitnessArray[i];
     };
     return z;
 
@@ -49,7 +49,7 @@ public: void print(){
         cout<< this-> gene[i] << " ";
     }
     cout  << this->fitness << "\n";
-}
+};
 private: int random(){
     random_device rd;
     uniform_int_distribution<int> dist(0, 100);
@@ -69,6 +69,7 @@ public: Population(int populationSize, int geneLegnth, int dimention){
     }
     pop.sort(this->sortChromosome);
 }
+
 public: Population(int populationSize, int geneLegnth, int dimention, int fitnessArray[]){
     this->size = populationSize;
     for(int i = 0; i < size; i++){
